@@ -1,6 +1,6 @@
 {
   "name": "test-electron-main",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Run node:test tests in an Electron main process",
   "author": "Vincent Weevers",
   "license": "MIT",
