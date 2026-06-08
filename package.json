@@ -5,7 +5,9 @@
   "author": "Vincent Weevers",
   "license": "MIT",
   "type": "module",
-  "bin": "cli.js",
+  "bin": {
+    "test-electron-main": "cli.js"
+  },
   "files": [
     "CHANGELOG.md",
     "cli.js",
@@ -34,7 +36,10 @@
   "engines": {
     "node": ">=24"
   },
-  "repository": "https://github.com/vweevers/test-electron-main",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vweevers/test-electron-main.git"
+  },
   "bugs": "https://github.com/vweevers/test-electron-main/issues",
   "keywords": [
     "electron",
