@@ -1,0 +1,44 @@
+{
+  "name": "test-electron-main",
+  "version": "0.0.0",
+  "description": "Run node:test tests in an Electron main process",
+  "author": "Vincent Weevers",
+  "license": "MIT",
+  "type": "module",
+  "bin": "cli.js",
+  "files": [
+    "CHANGELOG.md",
+    "cli.js",
+    "index.js",
+    "run.ts"
+  ],
+  "scripts": {
+    "test": "eslint && node cli.js test/* | tap-arc"
+  },
+  "dependencies": {
+    "electron": "^42.3.3",
+    "magic-string": "^0.30.21",
+    "vite": "^8.0.16"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "@voxpelli/tsconfig": "^16.1.0",
+    "eslint": "^9.39.1",
+    "neostandard": "^0.13.0",
+    "tap-arc": "^1.3.2",
+    "typescript": "^6.0.3"
+  },
+  "allowScripts": {
+    "unrs-resolver": false
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": "https://github.com/vweevers/test-electron-main",
+  "bugs": "https://github.com/vweevers/test-electron-main/issues",
+  "keywords": [
+    "electron",
+    "test",
+    "node:test"
+  ]
+}

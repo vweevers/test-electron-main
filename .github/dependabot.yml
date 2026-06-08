@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    ignore:
+      - dependency-name: "@types/node"
+      - dependency-name: "@voxpelli/tsconfig"
+      - dependency-name: eslint
+      - dependency-name: neostandard
+      - dependency-name: tap-arc
+      - dependency-name: typescript
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
