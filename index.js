@@ -149,6 +149,8 @@ function breakOnTest (ids) {
 }
 
 main().catch((err) => {
+  // Tell TAP consumer, so that they exit non-zero without needing a TAP plan (per se) or pipefail
+  console.log('Bail out! Fatal error. Please inspect stderr.\n')
   console.error(err)
   app.exit(1)
 })
