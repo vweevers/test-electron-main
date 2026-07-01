@@ -18,7 +18,7 @@
     "test": "eslint && node cli.js test/* | tap-arc"
   },
   "dependencies": {
-    "electron": "^42.3.3",
+    "electron": "^43.0.0",
     "magic-string": "^0.30.21",
     "vite": "^8.0.16"
   },
